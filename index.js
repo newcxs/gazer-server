@@ -1,10 +1,11 @@
-var config = new Object();
-config.global = require("./config/global");
+var config = require("./config");
+var handler = require("./handler");
 var http = require('http');
 
 http.createServer(function (req, res){
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
+    handler.httpServer(req, res);
 }).listen(config.global.port, config.global.ip);
 
-console.log("Server running at http://" + config.global.ip + ":" + config.global.port + "/");
+console.log("Gazer-Server running at http://"
+             + config.global.ip + ":"
+             + config.global.port + "/");
