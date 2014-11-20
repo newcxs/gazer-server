@@ -8,7 +8,7 @@ $submit_url = "http://127.0.0.1:10086";
 $key = "123456";
 
 $post = array();
-$post["mod"] = "ss.add";
+$post["mod"] = "shadowsocks.add";
 $post["data"] = "data";
 $post = json_encode($post);
 

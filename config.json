@@ -10,5 +10,9 @@
     },
     "api": {
         "key": "123456"
+    },
+    "supervisor": {
+        "dir": "/home/supervisor/",
+        "ext": ".conf"
     }
 }
